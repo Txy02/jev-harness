@@ -1,0 +1,44 @@
+{
+  "model": "jev-1.13.0",
+  "usage": {
+    "input_tokens": 452,
+    "output_tokens": 74
+  },
+  "latency_ms": 799,
+  "answers": {
+    "refund_requested": {
+      "type": "noul",
+      "noul": 0.99
+    },
+    "request_type": {
+      "type": "choice",
+      "choice": "refund",
+      "probabilities": {
+        "rebooking": 0.0,
+        "information": 0.0,
+        "refund": 1.0
+      },
+      "confidence": 1.0
+    },
+    "frustration": {
+      "type": "score",
+      "score": 0.27,
+      "legend": {
+        "0": "Calm and neutral.",
+        "1": "Concerned but civil.",
+        "2": "Very angry or using strong language."
+      },
+      "probabilities": {
+        "0": 0.73,
+        "1": 0.27,
+        "2": 0.0
+      },
+      "confidence": 0.6
+    }
+  },
+  "decisions": {
+    "refund_requested": "act",
+    "request_type": "act",
+    "frustration": "act"
+  }
+}
