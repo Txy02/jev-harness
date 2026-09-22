@@ -11,6 +11,10 @@ Jev 不是 LLM。你发给它一个 `state` 和一组类型化问题，它返回
 - **批处理**：`batch()` / `abatch()` 并发地对多个 state 问同一组问题。
 - **命令行**：`jev-harness ask` 与 `jev-harness replay`。
 
+## 功能结构图
+
+![jev-harness 功能结构图](docs/architecture/jev-harness-architecture-zh.png)
+
 > 社区项目，与 TypeSafe AI 无关联，不包含任何模型权重。
 
 ## 安装
